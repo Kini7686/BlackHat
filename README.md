@@ -23,34 +23,44 @@ How does a virtual environment work?
 We use a module named virtualenv which is a tool to create isolated Python environments. virtualenv creates a folder that contains all the necessary executables to use the packages that a Python project would need.
 
 Installing virtualenv
+```bash
 
 $ pip install virtualenv
+```
 
 Test your installation:
 
+```bash
 $ virtualenv --version
+```
 
 Using virtualenv, You can create a virtualenv using the following command:
 
+```bash
 $ virtualenv my_name
+```
 
 After running this command, a directory named my_name will be created. This is the directory that contains all the necessary executables to use the packages that a Python project would need. This is where Python packages will be installed. If you want to specify the Python interpreter of your choice, for example, Python 3, it can be done using the following command:
 
+```bash
 $ virtualenv -p /usr/bin/python3 virtualenv_name
+```
 
 To activate the virtual environment using Windows command prompt change the directory to your virtual env 
 
+```bash
 $ cd <envname>
 $ Scripts\activate 
 $ source virtualenv_name/bin/activate
+```
 
-
-geeksforgeeks.org/python-virtual-environment/
 
 
 ## Step 6: Download the required packages using the below command
 
-$ pip install -r requirements.txt 
+```bash
+$ pip install -r requirements.txt
+```
 
 
 ## Database Connection
@@ -85,10 +95,14 @@ Add 1 dummy data for the database to start functioning:
 ## Step 9: Now navigate to the terminal and run the following command.
 
 
+```bash
  $ python run app.py
+```
 Or 
 
+```bash
 $ python3 run app.py
+```
 
 ![image](https://github.com/user-attachments/assets/f09363fd-6957-4046-9390-f8e190a0ce70)
 
