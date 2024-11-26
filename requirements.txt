@@ -1,0 +1,12 @@
+flask
+flask_pymongo
+requests
+tldextract
+bs4
+lxml
+flask_bcrypt
+dnslib
+ipwhois
+aiohttp
+psycopg2
+jinja2

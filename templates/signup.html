@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'><link rel="stylesheet" href="../static/create an account.css">
+    <script src="../static/password confirmation.js"></script>
+    <title>Sign up page</title>
+</head>
+<body>
+ {% if exi_user == 1 %}
+                                    <div class="alert alert-danger" style="color: red;" role="alert">
+                                    User Already Exists. Please Log In instead of Registering again
+                                    </div>
+                                {% elif exi_user == 0 %}
+                                <div class="alert alert-success" style="color: green;" role="alert">
+                                    Registered Successfully
+                                    </div>
+                                                                    {% endif %}
+
+ 
+    <div class="container">
+        <div id="login-box">
+            <div class="logo">
+                <img src="../static/logo.png" class="img img-responsive img-circle center-block"/>
+                <!-- <img src="../img.png" alt="yes"> -->
+                <h1 class="logo-caption"><span class="tweak">S</span>ign up</h1>
+            </div><!-- /.logo -->
+            <form method="POST" action="{{url_for('signup')}}" accept-charset="utf-8" name="Modelform">
+            <div class="controls">
+                <input type="text" name="username" placeholder="Enter  Username" class="form-control" />
+                <input type="email" name="email" placeholder="Enter  E-mail" class="form-control" class="email" />
+                <input type="password" name="password" placeholder="Enter  Password" class="form-control" id="password" />
+                <input type="password" name="confirm_password" placeholder="Confirm Password" class="form-control" id="confirm_password" />
+                <input type="text" name="org" placeholder="Enter Organization" class="form-control" />
+                <button type="submit" class="btn btn-default btn-block btn-custom" onclick="location.href='login.html';">Create Account</button>
+            </div>
+            <div class="links">
+                <a  class="createAccount" href="login.html"> Already have an Account?</a>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div id="particles-js"></div>
+    <!-- partial -->
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'></script>
+    <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script><script  src="../static/login.js"></script>
+    
+
+    
+</body>
+</html>

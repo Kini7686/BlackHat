@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/table.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Target : <br> Modules :   <br></h2>
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">Sr no</div>
+            <div class="col col-2">Name</div>
+            <div class="col col-3">Data Entries</div>
+          </li>
+          
+
+          {% for item in data %}
+          {% set outerLoopIndex = loop.index0 %}
+          {% for key, value in item.items()%}
+          <li class="table-row">
+            <div class="col col-1" data-label="Sr no">{{ outerLoopIndex + 1 }}</div>
+            <div class="col col-2" data-label="Name">{{ key }}</div>
+            <div class="col col-3" data-label="Data Entries">{{ value }}</div>
+          </li>
+          
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    
+</body>
+</html>

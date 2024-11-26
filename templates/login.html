@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Background Login Screen</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'><link rel="stylesheet" href="../static/login.css">
+
+</head>
+<body>
+{% if invalid == 1 %}
+                                    <div class="alert alert-danger" style="color: red;" role="alert">
+                                    Invalid Password
+                                    </div>
+                                {% elif invalid == 2 %}
+                                <div class="alert alert-danger" style="color: red;" role="alert">
+                                    Invalid Username
+                                    </div>
+                                                                    {% endif %}
+
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div id="login-box">
+		<div class="logo">
+			<img src="../static/logo.png" class="img img-responsive img-circle center-block"/>
+			<h1 class="logo-caption"><span class="tweak">L</span>ogin</h1>
+		</div><!-- /.logo -->
+		<!--<div class="controls">
+			<input type="text" name="username" placeholder="Username" class="form-control" />
+			<input type="password" name="password" placeholder="Password" class="form-control" />
+			<button type="button" class="btn btn-default btn-block btn-custom"  onclick="location.href='dashboard.html';">Login</button>
+		</div>
+	-->
+
+		<form method="POST" action="{{url_for('login')}}" accept-charset="utf-8" name="Modelform">
+			<div class="controls">
+				<input type="text" name="username" placeholder="Username" class="form-control" />
+				<input type="password" name="pass" id="pass" placeholder="Password" class="form-control" />
+				<button type="submit" class="btn btn-default btn-block btn-custom" value="login">
+					Login
+				</button>
+			</div>
+		</form>
+
+		<div class="links">
+			<a  class="createAccount" href="signup.html"> Create an account.</a>
+		</div>
+	</div>
+</div>
+<div id="particles-js"></div>
+<!-- partial -->
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'></script>
+<script src='https://code.jquery.com/jquery-1.11.1.min.js'></script><script  src="../static/login.js"></script>
+
+</body>
+</html>

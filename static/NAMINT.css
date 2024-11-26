@@ -1,0 +1,36 @@
+*{
+    color: white;
+}
+
+body{
+    background-color: black;
+    background-image:url("../static/hacker.gif");
+}
+.go{
+    color: rgb(0, 228, 19);
+}
+#boxxx{
+    border-color:green;
+    z-index: 1;
+    color: white;
+    
+}
+#boxxx:hover{
+    background: green;
+    z-index: 1
+}
+#trans:hover{
+    transition-delay: 3s;
+    box-shadow: 10px 10px 5px green;
+}
+
+#boxxx2{
+    border-color:green;
+    z-index: 1;
+    color: white;
+}
+
+.warning{
+    color: black;
+}
+

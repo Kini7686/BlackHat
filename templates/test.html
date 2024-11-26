@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('drop')}}" method="post">
+        <label for="name">Target </label><br>
+        <input type="text" id="target" name="name" placeholder="Enter Your Name"><br>
+       
+        
+        <label for="Email">Select Modules</label><br>
+        <select name="modules" id="modules">
+          <option value="all">All Modules</option>
+          <option value="DNS">DNS</option>
+          <option value="NAMINT">NAMINT</option>
+          <option value="GitDocker">GitDocker</option>
+          <option value="NAMINT">NAMINT</option>
+          <option value="GitDocker">GitDocker</option>
+        </select>
+        <button type="submit" class="btn btn-default btn-block btn-custom" value="login">
+            Login
+        </button>
+      </form>
+</body>
+</html>

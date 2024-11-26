@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../static/dashboard.css">
+    <script src="../static/dashboard.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="controler">
+          <ul>
+            <li class="active">
+              <a href="new.html" class="option">
+                <h2>Create a New Project</h2>
+                
+                
+              </a>
+            </li>
+            
+            <!-- <li>
+              <a href="#two" class="option">
+                <h2>Whois</h2>
+                <h5>Has some stuff about option two</h5>
+              </a>
+            </li> -->
+            <li>
+              <a href="existing.html" class="option">
+                <h2>Existing Project</h2>
+                <!-- <h5>Has some stuff about option three</h5> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="visual">
+          <div class="rings">
+            <img  id="logo" src="../static/logo3.png" >
+            <div class="inner-ring" >
+
+            </div>
+            <div class="middle-ring">
+              
+            </div>
+            <div class="outer-ring" >
+              <!-- <div id="loago" ></div> -->
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" >Welcome &nbsp <a href="{{url_for('logout')}}">{{data}}</a> </div>
+          <div class="swiper-slide">Website Crawler</div>
+          <div class="swiper-slide">Header</div>
+          <div class="swiper-slide">Whois</div>
+          <div class="swiper-slide">DNS</div>
+          <div class="swiper-slide">SSL Info</div>
+          <div class="swiper-slide">Wayback</div>
+          <div class="swiper-slide">Subdomain</div>
+          <!-- <div class="swiper-slide"><a href="{{url_for('logout')}}"> Logout</a></div> -->
+          
+        </div>
+      </div>
+
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+      
+</body>
+</html>

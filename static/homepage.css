@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:black;
+    background-image:url("../static/hacker.gif"); 
+    background-repeat:repeat;
+    
+}
+.navbar {
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: rgba(75, 65, 65, 0.233);
+  /* position: sticky; */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.navbar li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.navbar a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.navbar li.login{
+    float: right;
+}
+.navbar li a{
+    color: white;
+}
+.navbar a:before,
+.navbar a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.navbar a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #3cfa2b;
+  border-top: 3px solid #3cfa2b;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.navbar a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #3cfa2b;
+  border-bottom: 3px solid #3cfa2b;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.navbar a:hover,
+.navbar .current a {
+  color: #ffffff;
+}
+.navbar a:hover:before,
+.navbar .current a:before,
+.navbar a:hover:after,
+.navbar .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+.logo{
+    display: grid;
+    place-items: center;
+    /* padding-top: 100px; */
+}
+img{
+    width:80vh;
+    padding-top: 60px;
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #96c7e8;
+    font-size: 70px;
+  }
+  .wholeclass{
+    background: #0000008f;
+  }
+  #Home{
+    font-family: 'Changa One', cursive;
+    /* background: #000000c9;  */
+  }
+  #About{
+    font-family: 'Changa One', cursive;
+  }
+  #Home{
+    font-family: 'Changa One', cursive;
+  }
+  #Blog{
+    font-family: 'Changa One', cursive;
+  }
+  #Services{
+    font-family: 'Changa One', cursive;
+  }
+  #Products{
+    font-family: 'Changa One', cursive;
+  }
+  #Contact{
+    font-family: 'Changa One', cursive;
+  }
+
+
+  .sections{
+    display: block;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #About{
+    background: #000000;
+  }
+  #Category{
+    background: #000000;
+  }
+  #Latest{
+    background: #000000;
+  }
+  #Contact{
+    background: #000000;
+  }
+  #Feedback{
+    background: #e6e6e6;
+  } */
+  .button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #28ff21;
+    padding: 7px 12px;;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+  }
+
+  /* .sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+} */
+h1{
+  color:red;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 0px 0px 5px #00ff14, 0px 0px 10px #00ff14, 0px 0px 10px #00ff14,
+    0px 0px 20px #00ff14;
+}
+p{
+  font-family: 'Sawarabi Gothic', sans-serif;
+  color: rgb(51 255 0 / 75%);
+  justify-content: center;
+  font-size: 25px;
+}
+.about-us-info{
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px; */
+  color: white;
+}
+
+
+
+
+.contact__social{
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 19;
+  color: white;
+  position: relative;
+  border-color: red;
+}
+
+.contact__icon{
+  position: relative;
+  align-self: center;
+  width: max-content;
+  font-size: 5rem;
+  color: var(--first-color);
+  border: 1px solid var(--background-color);
+  transition: 1s;
+  margin: 3rem;
+}
+
+.contact__icon:hover{
+  transform: rotate(1turn);
+}
+
+@media screen and (max-width: 591px){
+  
+  .contact__icon{
+    align-items: center;
+    width: max-content;
+    font-size: 3rem;
+    margin: 1rem;
+    
+  }
+}
+.socials{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.twitter{
+  width: 120px;
+  height: 120px;
+}
+
+.facebook{
+  width: 150px;
+  height: 150px;
+}
+.github{
+  width: 150px;
+  height: 140px;
+}
