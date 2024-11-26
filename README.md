@@ -1,16 +1,16 @@
-Step 1: Download the source code from GitHub from the below link:
+## Step 1: Download the source code from GitHub from the below link:
 
 
 
-Step 2:  If you do not have Python 3 installed then download  Python 3 or above from the below link :
+## Step 2:  If you do not have Python 3 installed then download  Python 3 or above from the below link :
 
 
 https://www.python.org/downloads/
 
 
-Step 3: Navigate to the BlackHat directory 
+## 3 Step 3: Navigate to the BlackHat directory 
 
-Step 4: Open a command prompt in the BlackHat directory
+## Step 4: Open a command prompt in the BlackHat directory
 
 
 Step 5: Create a Python virtual environment 
@@ -46,18 +46,18 @@ $ source virtualenv_name/bin/activate
 geeksforgeeks.org/python-virtual-environment/
 
 
-Step 6: Download the required packages using the below command
+## Step 6: Download the required packages using the below command
 
 $ pip install -r requirements.txt 
 
 
-Database Connection
+## Database Connection
 
-Step 7: Download MongoDB from the below link:
+## Step 7: Download MongoDB from the below link:
 
 https://www.mongodb.com/try/download/community-kubernetes-operator
 
-Step 8: Open MongoDB Compass and create a new connection and click connect
+## Step 8: Open MongoDB Compass and create a new connection and click connect
 ![image](https://github.com/user-attachments/assets/9b1a883e-85f9-4b6b-8e64-395b550319ea)
 
 
@@ -80,7 +80,7 @@ Add 1 dummy data for the database to start functioning:
 ![image](https://github.com/user-attachments/assets/41d01a3b-42e1-403a-ae9f-790932bc3519)
 
 
-Step 9: Now navigate to the terminal and run the following command.
+## Step 9: Now navigate to the terminal and run the following command.
 
 
  $ python run app.py
@@ -91,7 +91,7 @@ $ python3 run app.py
 ![image](https://github.com/user-attachments/assets/f09363fd-6957-4046-9390-f8e190a0ce70)
 
 
-Step 10: Now go to http://127.0.0.1:5000 in any browser
+## Step 10: Now go to http://127.0.0.1:5000 in any browser
 
 ![image](https://github.com/user-attachments/assets/633c838c-0aed-48bf-b419-ea6071c6a6c0)
 
